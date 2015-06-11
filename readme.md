@@ -1,0 +1,2 @@
+#Overview
+Android Twitter client that allows users to easily follow tweets from professional athletes and associations. This was the Android version of https://github.com/darkosancanin/iphone_streamapp. Note: This was never released.
