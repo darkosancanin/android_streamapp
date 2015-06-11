@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.idarko.streamapp.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar"
+        />
+     <com.idarko.streamapp.widget.SegmentedRadioGroup
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dip"
+		android:orientation="horizontal"
+		android:id="@+id/categories_control">
+		<!--  <RadioButton android:id="@id/button_one"
+			android:minWidth="40dip"
+			android:minHeight="33dip"
+			android:text="One"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:button="@null"
+			android:gravity="center"
+			android:textColor="@color/radio_colors" />-->
+	</com.idarko.streamapp.widget.SegmentedRadioGroup>
+     <ListView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/list_view"
+    />
+</LinearLayout>
+

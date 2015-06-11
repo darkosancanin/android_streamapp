@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content"
+                android:padding="10px" >
+	<ImageView android:id="@+id/profile_image"
+		android:layout_width="40px" 
+		android:layout_height="40px" />
+		
+	<TextView android:id="@+id/full_name"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/profile_image"
+		android:paddingLeft="30dp"
+		android:textSize="12dp"
+		android:textColor="@color/white"
+		android:text="Full Name" />
+		
+	<TextView android:id="@+id/username"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/profile_image"
+		android:paddingTop="2dp"
+		android:textColor="@color/white"
+		android:textSize="8dp"
+		android:maxWidth="50dp"
+		android:text="Username" />
+		
+	<TextView android:id="@+id/date"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_below="@id/username"
+		android:paddingTop="2dp"
+		android:textColor="@color/white"
+		android:textSize="8dp"
+		android:maxWidth="50dp"
+		android:text="Date" />
+		
+	<TextView android:id="@+id/text"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/profile_image"
+		android:layout_below="@id/full_name"
+		android:paddingLeft="30dp"
+		android:paddingTop="5dp"
+		android:textSize="10dp"
+		android:textColor="@color/white"
+		android:text="This is the tweet..." />
+</RelativeLayout>

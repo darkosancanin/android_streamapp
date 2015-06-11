@@ -1,0 +1,195 @@
+package com.idarko.streamapp.model;
+
+import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Tweet implements Parcelable {
+	private static final SimpleDateFormat twitterApiSearchDateFormat = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss ZZZ");
+	private static final SimpleDateFormat twitterApiUserDateFormat = new SimpleDateFormat("EEE MMM dd HH:mm:ss ZZZ yyyy");
+	private BigInteger tweetId;
+	private String text;
+	private String userName;
+	private String fullName;
+	private String profileImageUrl;
+	private String toUserName;
+	private Date createdDate;
+	
+	public Tweet(BigInteger tweetId, String text, String userName, String fullName, String profileImageUrl, String toUserName, Date createdDate){
+		this.tweetId = tweetId;
+		this.text = text;
+		this.userName = userName;
+		this.fullName = fullName;
+		this.profileImageUrl = profileImageUrl;
+		this.toUserName = toUserName;
+		this.createdDate = createdDate;
+	}
+	
+	public Tweet(TwitterSearchResult twitterSearchResult){
+		setText(twitterSearchResult.text);
+		setTweetId(new BigInteger(twitterSearchResult.idStr));
+		setUserName(twitterSearchResult.fromUser);
+		setToUserName(twitterSearchResult.toUser);
+		setProfileImageUrl(twitterSearchResult.profileImageUrl);
+		try {
+			createdDate = twitterApiSearchDateFormat.parse(twitterSearchResult.createdAt);
+		} catch (ParseException e) {}
+	}
+	
+	public Tweet(TwitterUserTimeLineResult twitterUserTimeLineResult){
+		setText(twitterUserTimeLineResult.text);
+		setTweetId(new BigInteger(twitterUserTimeLineResult.idStr));
+		setUserName(twitterUserTimeLineResult.user.userName);
+		setToUserName(twitterUserTimeLineResult.toUser);
+		setProfileImageUrl(twitterUserTimeLineResult.user.profileImageUrl);
+		setFullName(twitterUserTimeLineResult.user.fullName);
+		try {
+			createdDate = twitterApiUserDateFormat.parse(twitterUserTimeLineResult.createdAt);
+		} catch (ParseException e) {}
+	}
+	
+	public BigInteger getTweetId() {
+		return tweetId;
+	}
+	
+	public void setTweetId(BigInteger tweetId) {
+		this.tweetId = tweetId;
+	}
+	
+	public String getText() {
+		return text;
+	}
+	
+	public void setText(String text) {
+		this.text = text;
+	}
+	
+	public String getUserName() {
+		return userName;
+	}
+	
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
+	
+	public String getFullName() {
+		return fullName;
+	}
+	
+	public void setFullName(String fullName) {
+		this.fullName = fullName;
+	}
+	
+	public String getProfileImageUrl() {
+		return profileImageUrl;
+	}
+	
+	public void setProfileImageUrl(String profileImageUrl) {
+		this.profileImageUrl = profileImageUrl;
+	}
+	
+	public String getToUserName() {
+		return toUserName;
+	}
+	
+	public void setToUserName(String toUserName) {
+		this.toUserName = toUserName;
+	}
+	
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+
+	@Override
+	public int describeContents() {
+		return 0;
+	}
+
+	@Override
+	public void writeToParcel(Parcel out, int flags) {
+		out.writeString(getTweetId().toString());
+		out.writeString(getText());
+		out.writeString(getFullName());
+		out.writeString(getUserName());
+		out.writeString(getProfileImageUrl());
+		out.writeString(getToUserName());
+		out.writeLong(createdDate.getTime());
+	}
+	
+	public Tweet(Parcel source){
+		setTweetId(new BigInteger(source.readString()));
+		setText(source.readString());
+		setFullName(source.readString());
+		setUserName(source.readString());
+		setProfileImageUrl(source.readString());
+		setToUserName(source.readString());
+		setCreatedDate(new Date(source.readLong()));
+	}
+	
+	public static final Parcelable.Creator<Tweet> CREATOR = new Parcelable.Creator<Tweet>() {
+		public Tweet createFromParcel(Parcel source) {
+			return new Tweet(source);
+		}
+
+		public Tweet[] newArray(int size) {
+			return new Tweet[size];
+		}
+	};
+	
+	public String humanFriendlyCreatedDate() {
+		Date today = new Date();
+		 
+		Long duration = today.getTime() - createdDate.getTime();
+ 
+		int second = 1000;
+		int minute = second * 60;
+		int hour = minute * 60;
+		int day = hour * 24;
+ 
+		if (duration < second * 7) {
+			return "right now";
+		}
+ 
+		if (duration < minute) {
+			int n = (int) Math.floor(duration / second);
+			return n + " seconds ago";
+		}
+ 
+		if (duration < minute * 2) {
+			return "about 1 minute ago";
+		}
+ 
+		if (duration < hour) {
+			int n = (int) Math.floor(duration / minute);
+			return n + " minutes ago";
+		}
+ 
+		if (duration < hour * 2) {
+			return "about 1 hour ago";
+		}
+ 
+		if (duration < day) {
+			int n = (int) Math.floor(duration / hour);
+			return n + " hours ago";
+		}
+		if (duration > day && duration < day * 2) {
+			return "yesterday";
+		}
+ 
+		if (duration < day * 365) {
+			int n = (int) Math.floor(duration / day);
+			return n + " days ago";
+		} else {
+			return "over a year ago";
+		}
+		
+	}
+}

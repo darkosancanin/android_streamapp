@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <com.idarko.streamapp.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar"
+        />
+    <com.idarko.streamapp.widget.UserInfoHeaderView
+	        android:id="@+id/user_info_header"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        />
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_table"
+    android:visibility="gone"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Location"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/location"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Bio"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/bio"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Web"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/web"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Followers"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/followers"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Tweets"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/tweets"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+	<TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:text="Verified"
+			android:textColor="@color/white"
+			/>
+        <TextView
+            android:id="@+id/verified"
+			android:textColor="@color/white"
+			/>
+    </TableRow>
+</TableLayout>
+<Button
+			android:id="@+id/add_to_favourites"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:text="add to favourites"
+			android:textColor="@color/white"
+			/>
+<Button
+			android:id="@+id/tweets_from"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:text="tweets from @Someuser"
+			android:textColor="@color/white"
+			/>
+<Button
+			android:id="@+id/tweets_to"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:text="tweets to @Someuser"
+			android:textColor="@color/white"
+			/>
+<Button
+			android:id="@+id/tweets_to_and_from"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:text="tweets to and from @Someuser"
+			android:textColor="@color/white"
+			/>
+<Button
+			android:id="@+id/twitter_page"
+			android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+            android:text="twitter page"
+			android:textColor="@color/white"
+			/>
+</LinearLayout>
+

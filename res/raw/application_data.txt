@@ -1,0 +1,566 @@
+{
+  "version": 1,
+  "stream_categories": [
+    {
+      "name": "Men",
+      "is_sections_sorted_alphabetically": true,
+      "stream_sections": [
+        {
+          "name": "A",
+          "streams": [
+            {
+              "short_name": "Andy Murray",
+              "name": "Andy Murray",
+              "users": [
+                {
+                  "full_name": "Andy Murray",
+                  "user_name": "andy_murray"
+                }
+              ]
+            },
+            {
+              "short_name": "Amer Delic",
+              "name": "Amer Delic",
+              "users": [
+                {
+                  "full_name": "Amer Delic",
+                  "user_name": "AmerDelic"
+                }
+              ]
+            },
+            {
+              "short_name": "Andy Roddick",
+              "name": "Andy Roddick",
+              "users": [
+                {
+                  "full_name": "Andy Roddick",
+                  "user_name": "andyroddick"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        },
+        {
+          "name": "B",
+          "streams": [
+            {
+              "short_name": "Blaz Kavcic",
+              "name": "Blaz Kavcic",
+              "users": [
+                {
+                  "full_name": "Blaz Kavcic",
+                  "user_name": "blaz_kavcic"
+                }
+              ]
+            },
+            {
+              "short_name": "Bob Bryan",
+              "name": "Bob Bryan",
+              "users": [
+                {
+                  "full_name": "Bob Bryan",
+                  "user_name": "Bryanbros"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        },
+        {
+          "name": "C",
+          "streams": [
+            {
+              "short_name": "Carlos Moya",
+              "name": "Carlos Moya",
+              "users": [
+                {
+                  "full_name": "Carlos Moya",
+                  "user_name": "Charlymoya"
+                }
+              ]
+            },
+            {
+              "short_name": "Colin Fleming",
+              "name": "Colin Fleming",
+              "users": [
+                {
+                  "full_name": "Colin Fleming",
+                  "user_name": "colin_fleming"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        },
+        {
+          "name": "D",
+          "streams": [
+            {
+              "short_name": "David Nalbandian",
+              "name": "David Nalbandian",
+              "users": [
+                {
+                  "full_name": "David Nalbandian",
+                  "user_name": "nalbandiandavid"
+                }
+              ]
+            },
+            {
+              "short_name": "Devin Britton",
+              "name": "Devin Britton",
+              "users": [
+                {
+                  "full_name": "Devin Britton",
+                  "user_name": "DevinBritton"
+                }
+              ]
+            },
+            {
+              "short_name": "Dusan Vemic",
+              "name": "Dusan Vemic",
+              "users": [
+                {
+                  "full_name": "Dusan Vemic",
+                  "user_name": "dusanVemic"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        }
+      ]
+    },
+    {
+      "name": "Women",
+      "is_sections_sorted_alphabetically": true,
+      "stream_sections": [
+        {
+          "name": "A",
+          "streams": [
+            {
+              "short_name": "Alla Kudryavtseva",
+              "name": "Alla Kudryavtseva",
+              "users": [
+                {
+                  "full_name": "Alla Kudryavtseva",
+                  "user_name": "AllaK11"
+                }
+              ]
+            },
+            {
+              "short_name": "Alina  Jidkova",
+              "name": "Alina  Jidkova",
+              "users": [
+                {
+                  "full_name": "Alina  Jidkova",
+                  "user_name": "AlinaJidkova"
+                }
+              ]
+            },
+            {
+              "short_name": "Anastasia Pivovarova",
+              "name": "Anastasia Pivovarova",
+              "users": [
+                {
+                  "full_name": "Anastasia Pivovarova",
+                  "user_name": "A_Pivovarova"
+                }
+              ]
+            },
+            {
+              "short_name": "Anastasia Rodionova",
+              "name": "Anastasia Rodionova",
+              "users": [
+                {
+                  "full_name": "Anastasia Rodionova",
+                  "user_name": "arodionova"
+                }
+              ]
+            },
+            {
+              "short_name": "Anna Fitzpatrick",
+              "name": "Anna Fitzpatrick",
+              "users": [
+                {
+                  "full_name": "Anna Fitzpatrick",
+                  "user_name": "TennisFITZY"
+                }
+              ]
+            },
+            {
+              "short_name": "Andrea Petkovic",
+              "name": "Andrea Petkovic",
+              "users": [
+                {
+                  "full_name": "Andrea Petkovic",
+                  "user_name": "andreapetkovic"
+                }
+              ]
+            },
+            {
+              "short_name": "Anna-Lena Groenefeld",
+              "name": "Anna-Lena Groenefeld",
+              "users": [
+                {
+                  "full_name": "Anna-Lena Groenefeld",
+                  "user_name": "Annagroenefeld"
+                }
+              ]
+            },
+            {
+              "short_name": "Anne Keothavong",
+              "name": "Anne Keothavong",
+              "users": [
+                {
+                  "full_name": "Anne Keothavong",
+                  "user_name": "annekeothavong"
+                }
+              ]
+            },
+            {
+              "short_name": "Arina Rodionova",
+              "name": "Arina Rodionova",
+              "users": [
+                {
+                  "full_name": "Arina Rodionova",
+                  "user_name": "arinarodionova"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        },
+        {
+          "name": "B",
+          "streams": [
+            {
+              "short_name": "Bethanie Mattek-Sands",
+              "name": "Bethanie Mattek-Sands",
+              "users": [
+                {
+                  "full_name": "Bethanie Mattek-Sands",
+                  "user_name": "BMATTEK"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        },
+        {
+          "name": "C",
+          "streams": [
+            {
+              "short_name": "Casey Dellacqua",
+              "name": "Casey Dellacqua",
+              "users": [
+                {
+                  "full_name": "Casey Dellacqua",
+                  "user_name": "caseydellacqua"
+                }
+              ]
+            },
+            {
+              "short_name": "Caroline Wozniacki",
+              "name": "Caroline Wozniacki",
+              "users": [
+                {
+                  "full_name": "Caroline Wozniacki",
+                  "user_name": "CaroWozniacki"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "is_sections_sorted_alphabetically": false,
+      "stream_sections": [
+        {
+          "name": "Tournaments",
+          "streams": [
+            {
+              "short_name": "French Open",
+              "name": "French Open",
+              "users": [
+                {
+                  "full_name": "Roland Garros",
+                  "user_name": "rolandgarros"
+                },
+                {
+                  "full_name": "Roland Garros English",
+                  "user_name": "rolandgarrosen"
+                }
+              ]
+            },
+            {
+              "short_name": "US Open",
+              "name": "US Open",
+              "users": [
+                {
+                  "full_name": "US Open",
+                  "user_name": "usopen"
+                }
+              ]
+            },
+            {
+              "short_name": "Australian Open",
+              "name": "Australian Open",
+              "users": [
+                {
+                  "full_name": "Australian Open",
+                  "user_name": "AustralianOpen"
+                }
+              ]
+            },
+            {
+              "short_name": "Wimbledon",
+              "name": "Wimbledon",
+              "users": [
+                {
+                  "full_name": "Wimbledon",
+                  "user_name": "Wimbledon"
+                }
+              ]
+            }
+          ],
+          "each_user_in_own_stream": false
+        }
+      ]
+    }
+  ],
+  "hashtag_categories": [
+    {
+      "name": "",
+      "is_sections_sorted_alphabetically": false,
+      "hashtag_sections": [
+        {
+          "name": "Tournaments",
+          "hashtag_collections": [
+            {
+              "name": "Australian Open",
+              "short_name": "Australian Open",
+              "hashtags": [
+                "AustralianOpen",
+                "AusOpen"
+              ]
+            },
+            {
+              "name": "French Open",
+              "short_name": "French Open",
+              "hashtags": [
+                "FrenchOpen",
+                "RolandGarros"
+              ]
+            },
+            {
+              "name": "US Open",
+              "short_name": "US Open",
+              "hashtags": [
+                "USOpen",
+                "FlushingMeadows"
+              ]
+            },
+            {
+              "name": "Wimbledon",
+              "short_name": "Wimbledon",
+              "hashtags": [
+                "Wimbledon",
+                "Wimbeldon"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Men",
+          "hashtag_collections": [
+            {
+              "name": "Andy Murray",
+              "short_name": "Andy Murray",
+              "hashtags": [
+                "Murray",
+                "AndyMurray"
+              ]
+            },
+            {
+              "name": "Andy Roddick",
+              "short_name": "Andy Roddick",
+              "hashtags": [
+                "Roddick",
+                "AndyRoddick"
+              ]
+            },
+            {
+              "name": "David Ferrer",
+              "short_name": "David Ferrer",
+              "hashtags": [
+                "Ferrer",
+                "DavidFerrer"
+              ]
+            },
+            {
+              "name": "Gael Monfils",
+              "short_name": "Gael Monfils",
+              "hashtags": [
+                "Monfils",
+                "GaelMonfils"
+              ]
+            },
+            {
+              "name": "Mardy Fish",
+              "short_name": "Mardy Fish",
+              "hashtags": [
+                "MardyFish"
+              ]
+            },
+            {
+              "name": "Novak Djokovic",
+              "short_name": "Novak Djokovic",
+              "hashtags": [
+                "Djokovic",
+                "NovakDjokovic"
+              ]
+            },
+            {
+              "name": "Rafael Nadal",
+              "short_name": "Rafael Nadal",
+              "hashtags": [
+                "Nadal",
+                "RafaelNadal",
+                "Rafa"
+              ]
+            },
+            {
+              "name": "Robin Soderling",
+              "short_name": "Robin Soderling",
+              "hashtags": [
+                "Soderling",
+                "RobinSoderling"
+              ]
+            },
+            {
+              "name": "Roger Federer",
+              "short_name": "Roger Federer",
+              "hashtags": [
+                "Federer",
+                "RogerFederer"
+              ]
+            },
+            {
+              "name": "Tomas Berdych",
+              "short_name": "Tomas Berdych",
+              "hashtags": [
+                "Berdych",
+                "TomasBerdych"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Women",
+          "hashtag_collections": [
+            {
+              "name": "Andrea Petkovic",
+              "short_name": "Andrea Petkovic",
+              "hashtags": [
+                "Petkovic",
+                "AndreaPetkovic",
+                "Petkorazzi"
+              ]
+            },
+            {
+              "name": "Caroline Wozniacki",
+              "short_name": "Caroline Wozniacki",
+              "hashtags": [
+                "Wozniacki",
+                "CarolineWozniacki"
+              ]
+            },
+            {
+              "name": "Francesca Schiavone",
+              "short_name": "Francesca Schiavone",
+              "hashtags": [
+                "Schiavone",
+                "FrancescaSchiavone"
+              ]
+            },
+            {
+              "name": "Kim Clijsters",
+              "short_name": "Kim Clijsters",
+              "hashtags": [
+                "Clijsters",
+                "KimClijsters"
+              ]
+            },
+            {
+              "name": "Li Na",
+              "short_name": "Li Na",
+              "hashtags": [
+                "LiNa"
+              ]
+            },
+            {
+              "name": "Maria Sharapova",
+              "short_name": "Maria Sharapova",
+              "hashtags": [
+                "Sharapova",
+                "MariaSharapova"
+              ]
+            },
+            {
+              "name": "Marion Bartoli",
+              "short_name": "Marion Bartoli",
+              "hashtags": [
+                "Bartoli",
+                "MarionBartoli"
+              ]
+            },
+            {
+              "name": "Petra Kvitova",
+              "short_name": "Petra Kvitova",
+              "hashtags": [
+                "Kvitova",
+                "PetraKvitova"
+              ]
+            },
+            {
+              "name": "Samantha Stosur",
+              "short_name": "Samantha Stosur",
+              "hashtags": [
+                "Stosur",
+                "SamanthaStosur"
+              ]
+            },
+            {
+              "name": "Svetlana Kuznetsova",
+              "short_name": "Svetlana Kuznetsova",
+              "hashtags": [
+                "Kuznetsova",
+                "SvetlanaKuznetsova"
+              ]
+            },
+            {
+              "name": "Vera Zvonareva",
+              "short_name": "Vera Zvonareva",
+              "hashtags": [
+                "Zvonareva",
+                "VeraZvonareva"
+              ]
+            },
+            {
+              "name": "Victoria Azarenka",
+              "short_name": "Victoria Azarenka",
+              "hashtags": [
+                "Azarenka",
+                "VictoriaAzarenka"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
